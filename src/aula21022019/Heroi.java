@@ -1,16 +1,20 @@
-package aula07022019;
+package aula21022019;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Heroi {
 	String nome;
 	String identidadeSecreta;
-	Poder poder = new Poder("shshshhshshshsh");
+	List<Poder> poderes = new ArrayList<Poder>();
 	
-	public void adicionarPoder() {
-		
+	public void adicionarPoder(Poder poder) {
+		poderes.add(poder);
 	}
- 	
-	public void usarPoder() {
-		poder.ativar();
+		
+	public void usarPoder(int index) {
+		if (index >= 0 && index < poderes.size()) {
+			poderes.get(index).ativar();
+		}
 	}
 	
 	public Heroi(String nome, String identidadeSecreta) {
