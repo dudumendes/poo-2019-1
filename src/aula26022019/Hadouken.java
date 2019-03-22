@@ -1,4 +1,4 @@
-package aula21022019;
+package aula26022019;
 
 public class Hadouken extends Poder {
 	
