@@ -10,7 +10,7 @@ public class Mixer {
                     + el2.getDamage() + el2.getDangerFactor();
 
         if (total > DANGER_LIMIT) {
-            throw new Excpetion();
+            throw new Exception();
         }
 
         return total;
